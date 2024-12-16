@@ -1,3 +1,6 @@
+!pip install -U kogi-canvas
+from kogi_canvas import play_othello, PandaAI
+
 import random
 
 BLACK = 1
@@ -88,7 +91,7 @@ def minimax(board, depth, stone, alpha, beta):
     # 基本的な終了条件
     if depth == 0:
         return evaluate_board(board, stone), None
-    
+
     best_score = -float('inf') if stone == BLACK else float('inf')
     best_move = None
 
