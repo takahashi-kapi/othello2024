@@ -1,3 +1,4 @@
+!pip install -U kogi-canvas
 import math
 import random
 from kogi_canvas import play_othello
